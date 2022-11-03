@@ -33,25 +33,41 @@ WARNING!!! WARNING!!!
 // Wrap the entire contents of script.js inside of an IIFE
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
-
-(function () {
-let names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-
 // STEP 10:
 // Loop over the names array and say either 'Hello' or "Good Bye"
 // using either the helloSpeaker's or byeSpeaker's 'speak' method.
 // See Lecture 50, part 1
+
+(function () {
+let names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 for (let i = 0; i < names.length; i++) {
-  let name1 = names[i];
+  const name1 = names[i];
   let firstLetter =  name1.charAt(0);
-  firstLetter.toLowerCase();
+  firstLetter = firstLetter.toLowerCase();
   if (firstLetter === "j") {
-     byeSpeaker.name1;
+     byeSpeaker.speak(name1);
   } else {
-    helloSpeaker.name1;
+    helloSpeaker.speak(name1);
   }
 }
 })();
+
+
+//window.helloSpeaker.speak(name1);
+
+// (function () {
+// let names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+// for (let i = 0; i < names.length; i++) {
+//   const name1 = names[i];
+//   let firstLetter =  name1.charAt(0);
+//   firstLetter.toLowerCase();
+//   if (firstLetter === "j") {
+//      byeSpeaker.name1;
+//   } else {
+//     helloSpeaker.name1;
+//   }
+// }
+// })();
 
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.

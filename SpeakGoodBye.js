@@ -2,9 +2,9 @@
 // performed in the SpeakHello.js file.
 
 (function (window) {
-    var speakWord = "Good bye";
-    var byeSpeaker = { };
-    byeSpeaker.speak = function(name){
+  const speakWord = "Good bye";
+  let byeSpeaker = {};
+  byeSpeaker.speak = function(name){
       console.log(speakWord + " " + name);
   };
 
